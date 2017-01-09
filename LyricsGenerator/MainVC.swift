@@ -19,6 +19,7 @@ class MainVC: UIViewController, AVAudioPlayerDelegate {
     var audioPlayer:AVAudioPlayer!
     
     @IBAction func play(_ sender: UIButton) {
+        activitySpinner.stopAnimating()
         activitySpinner.isHidden = false
         activitySpinner.startAnimating()
         requestSpeechAuth()
