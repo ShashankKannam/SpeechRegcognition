@@ -32,6 +32,7 @@ class MainVC: UIViewController, AVAudioPlayerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         activitySpinner.isHidden = true
        // requestSpeechAuth()
         // Do any additional setup after loading the view, typically from a nib.
@@ -49,6 +50,7 @@ class MainVC: UIViewController, AVAudioPlayerDelegate {
                     do{
                         let sound = try AVAudioPlayer(contentsOf: path)
                         self.audioPlayer = sound
+                        self.audioPlayer.delegate = self
                         sound.play()
                     }catch let error as NSError{
                        print(error.debugDescription)
