@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		986405381E22E30A00858F99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986405371E22E30A00858F99 /* AppDelegate.swift */; };
-		9864053A1E22E30A00858F99 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986405391E22E30A00858F99 /* ViewController.swift */; };
+		9864053A1E22E30A00858F99 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986405391E22E30A00858F99 /* MainVC.swift */; };
 		9864053D1E22E30A00858F99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9864053B1E22E30A00858F99 /* Main.storyboard */; };
 		9864053F1E22E30A00858F99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9864053E1E22E30A00858F99 /* Assets.xcassets */; };
 		986405421E22E30A00858F99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 986405401E22E30A00858F99 /* LaunchScreen.storyboard */; };
+		9864054A1E22E6C700858F99 /* CustomRoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986405491E22E6C700858F99 /* CustomRoundedButton.swift */; };
+		986405521E2316DE00858F99 /* _Cake By The Ocean.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 986405511E2316DE00858F99 /* _Cake By The Ocean.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		986405341E22E30A00858F99 /* LyricsGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LyricsGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		986405371E22E30A00858F99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		986405391E22E30A00858F99 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		986405391E22E30A00858F99 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		9864053C1E22E30A00858F99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9864053E1E22E30A00858F99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		986405411E22E30A00858F99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		986405431E22E30A00858F99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		986405491E22E6C700858F99 /* CustomRoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomRoundedButton.swift; sourceTree = "<group>"; };
+		986405511E2316DE00858F99 /* _Cake By The Ocean.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "_Cake By The Ocean.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,10 +59,12 @@
 			isa = PBXGroup;
 			children = (
 				986405371E22E30A00858F99 /* AppDelegate.swift */,
-				986405391E22E30A00858F99 /* ViewController.swift */,
+				986405491E22E6C700858F99 /* CustomRoundedButton.swift */,
+				986405391E22E30A00858F99 /* MainVC.swift */,
 				9864053B1E22E30A00858F99 /* Main.storyboard */,
 				9864053E1E22E30A00858F99 /* Assets.xcassets */,
 				986405401E22E30A00858F99 /* LaunchScreen.storyboard */,
+				986405511E2316DE00858F99 /* _Cake By The Ocean.mp3 */,
 				986405431E22E30A00858F99 /* Info.plist */,
 			);
 			path = LyricsGenerator;
@@ -96,7 +102,6 @@
 				TargetAttributes = {
 					986405331E22E30A00858F99 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 3777KUBFEB;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -127,6 +132,7 @@
 				986405421E22E30A00858F99 /* LaunchScreen.storyboard in Resources */,
 				9864053F1E22E30A00858F99 /* Assets.xcassets in Resources */,
 				9864053D1E22E30A00858F99 /* Main.storyboard in Resources */,
+				986405521E2316DE00858F99 /* _Cake By The Ocean.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +143,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9864053A1E22E30A00858F99 /* ViewController.swift in Sources */,
+				9864054A1E22E6C700858F99 /* CustomRoundedButton.swift in Sources */,
+				9864053A1E22E30A00858F99 /* MainVC.swift in Sources */,
 				986405381E22E30A00858F99 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,7 +268,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3777KUBFEB;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = LyricsGenerator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = KS.LyricsGenerator;
@@ -274,7 +282,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3777KUBFEB;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = LyricsGenerator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = KS.LyricsGenerator;
